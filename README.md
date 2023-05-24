@@ -14,5 +14,5 @@ Evaluating C# expressions from strings/text has always been a challenge. Many of
   * Flee
   * Expressive
 
-This repository aims to benchmark all current sensible choices for a performant and easy to use expression evaluator to help me (and hopefully us) to find which one is the best.
+This repository aims to benchmark current sensible choices of performant and easy to use expression evaluators to help me (and hopefully us) find which one is the best.
 
