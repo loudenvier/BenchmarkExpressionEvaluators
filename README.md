@@ -8,7 +8,7 @@ Evaluating C# expressions from strings/text has always been a challenge. Many of
 * "Hacks" that use `DataTable.Compute`, `DataColumn` `"Eval"`, SQL etc.
 * Microsoft's amazing (and overpowered) "compiler as a service" Roslyn
 * ... And it's scripting offsprings
-* Good'n'old `Dynamic Linq` (now ported to .NET Core)
+* Good'n'old `Linq Dynamic` (now ported to .NET Core)
 * And third-party expression evaluators such as:
   * NCalc
   * Flee
