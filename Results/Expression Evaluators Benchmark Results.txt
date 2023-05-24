@@ -1,0 +1,21 @@
+// * Summary *
+
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2965/22H2/2022Update)
+AMD Ryzen 5 5600G with Radeon Graphics, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=7.0.202
+  [Host]     : .NET 7.0.4 (7.0.423.11508), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.4 (7.0.423.11508), X64 RyuJIT AVX2
+
+
+|                              Method |        Mean |     Error |    StdDev |   Gen0 | Allocated |
+|------------------------------------ |------------:|----------:|----------:|-------:|----------:|
+|              DirectCSharpSameValues |   0.1942 ns | 0.0058 ns | 0.0054 ns |      - |         - |
+|    DynamicLinqParseLambdaSameValues |   0.6634 ns | 0.0056 ns | 0.0050 ns |      - |         - |
+|   RoslynCompiledInterfaceSameValues |   0.8592 ns | 0.0017 ns | 0.0014 ns |      - |         - |
+| RoslynCompiledDynamicCallSameValues |   8.7771 ns | 0.0900 ns | 0.0797 ns | 0.0029 |      24 B |
+|   RoslynCompiledEvaluatorSameValues |   0.6333 ns | 0.0051 ns | 0.0047 ns |      - |         - |
+|      CSharpScriptCompiledSameValues |  99.6133 ns | 0.8357 ns | 0.7817 ns | 0.0324 |     272 B |
+|      CSharpScriptDelegateSameValues |  73.4465 ns | 0.6178 ns | 0.5779 ns | 0.0162 |     136 B |
+|                      FleeSameValues |  47.3825 ns | 0.1717 ns | 0.1522 ns |      - |         - |
+|                ExpressiveSameValues | 196.7504 ns | 1.8416 ns | 1.7226 ns | 0.0172 |     144 B |
+|                     NCalcSameValues | 382.7846 ns | 3.1129 ns | 2.7595 ns | 0.1440 |    1208 B |
