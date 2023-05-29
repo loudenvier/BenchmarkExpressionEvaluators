@@ -16,3 +16,7 @@ Evaluating C# expressions from strings/text has always been a challenge. Many of
 
 This repository aims to benchmark current sensible choices of performant and easy to use expression evaluators to help me (and hopefully us) find which one is the best.
 
+## Current results
+
+
+![Results](Results/Expression%20Evaluators%20Benchmark%20Results.png "Title")
